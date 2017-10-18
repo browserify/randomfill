@@ -1,5 +1,6 @@
 var test = require('tape')
 var crypto = require('./browser')
+var Buffer = require('safe-buffer').Buffer
 test('sync', function (t) {
   t.test('first', function (t) {
     const buf = Buffer.alloc(10)

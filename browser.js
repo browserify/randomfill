@@ -44,7 +44,7 @@ if ((crypto && crypto.getRandomValues) || !process.browser) {
   exports.randomFillSync = oldBrowser
 }
 function randomFill (buf, offset, size, cb) {
-  if (!Buffer.isBuffer(buf) || !(buf instanceof global.Uint8Array)) {
+  if (!Buffer.isBuffer(buf) && !(buf instanceof global.Uint8Array)) {
     throw new TypeError('"buf" argument must be a Buffer or Uint8Array')
   }
 
@@ -94,7 +94,7 @@ function randomFillSync (buf, offset, size) {
   if (typeof offset === 'undefined') {
     offset = 0
   }
-  if (!Buffer.isBuffer(buf) || !(buf instanceof global.Uint8Array)) {
+  if (!Buffer.isBuffer(buf) && !(buf instanceof global.Uint8Array)) {
     throw new TypeError('"buf" argument must be a Buffer or Uint8Array')
   }
 
