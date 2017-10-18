@@ -8,7 +8,7 @@ var randombytes = require('randombytes')
 var Buffer = safeBuffer.Buffer
 var kBufferMaxLength = safeBuffer.kMaxLength
 var crypto = global.crypto || global.msCrypto
-const kMaxUint32 = Math.pow(2, 32) - 1
+var kMaxUint32 = Math.pow(2, 32) - 1
 function assertOffset (offset, length) {
   if (typeof offset !== 'number' || offset !== offset) { // eslint-disable-line no-self-compare
     throw new TypeError('offset must be a number')
