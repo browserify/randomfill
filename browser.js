@@ -36,7 +36,7 @@ function assertSize (size, offset, length) {
     throw new RangeError('buffer too small')
   }
 }
-if (crypto && crypto.getRandomValues) {
+if ((crypto && crypto.getRandomValues) || !process.browser) {
   exports.randomFill = randomFill
   exports.randomFillSync = randomFillSync
 } else {
