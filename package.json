@@ -1,7 +1,7 @@
 {
-  "name": "randombytes",
+  "name": "randomfill",
   "version": "2.0.5",
-  "description": "random bytes from browserify stand alone",
+  "description": "random fill from browserify stand alone",
   "main": "index.js",
   "scripts": {
     "test": "standard && node test.js | tspec",
@@ -31,6 +31,7 @@
     "zuul": "^3.7.2"
   },
   "dependencies": {
+    "randombytes": "^2.0.5",
     "safe-buffer": "^5.1.0"
   }
 }
