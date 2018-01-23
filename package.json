@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:crypto-browserify/randombytes.git"
+    "url": "https://github.com/crypto-browserify/randomfill.git"
   },
   "keywords": [
     "crypto",
@@ -19,9 +19,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crypto-browserify/randombytes/issues"
+    "url": "https://github.com/crypto-browserify/randomfill/issues"
   },
-  "homepage": "https://github.com/crypto-browserify/randombytes",
+  "homepage": "https://github.com/crypto-browserify/randomfill",
   "browser": "browser.js",
   "devDependencies": {
     "phantomjs": "^1.9.9",
