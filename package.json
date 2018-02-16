@@ -1,6 +1,6 @@
 {
   "name": "randomfill",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "random fill from browserify stand alone",
   "main": "index.js",
   "scripts": {
